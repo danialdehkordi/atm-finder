@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Apex Bank ATM",
+        "address": "Marienplatz 1, 80331 München",
+        "zip_code": "80331",
+        "lat": 48.137154,
+        "lng": 11.575382
+    },
+    {
+        "name": "Stellar Bank ATM",
+        "address": "Kaufingerstraße 15, 80331 München",
+        "zip_code": "80331",
+        "lat": 48.13749,
+        "lng": 11.57222
+    },
+    {
+        "name": "Pinnacle Trust ATM",
+        "address": "Tal 2, 80331 München",
+        "zip_code": "80331",
+        "lat": 48.1359,
+        "lng": 11.578
+    },
+    {
+        "name": "Apex Bank ATM",
+        "address": "Leopoldstraße 8, 80802 München",
+        "zip_code": "80802",
+        "lat": 48.1549,
+        "lng": 11.583
+    },
+    {
+        "name": "Stellar Bank ATM",
+        "address": "Leopoldstraße 45, 80802 München",
+        "zip_code": "80802",
+        "lat": 48.158,
+        "lng": 11.585
+    },
+    {
+        "name": "Pinnacle Trust ATM",
+        "address": "Münchner Freiheit 20, 80802 München",
+        "zip_code": "80802",
+        "lat": 48.1601,
+        "lng": 11.5869
+    },
+    {
+        "name": "Meridian Bank ATM",
+        "address": "Arabellastraße 12, 81925 München",
+        "zip_code": "81925",
+        "lat": 48.153,
+        "lng": 11.62
+    },
+    {
+        "name": "Keystone Financial ATM",
+        "address": "Englschalkinger Str. 12, 81925 München",
+        "zip_code": "81925",
+        "lat": 48.155,
+        "lng": 11.622
+    }
+]
