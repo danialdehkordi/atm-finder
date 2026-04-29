@@ -21,7 +21,8 @@ Build a simple, sophisticated single-page web application that allows a user to 
     * Generate a realistic `data.json` file at the project root containing an array of 5 to 8 ATM objects located in Munich, Germany (use the zip code `80331`). Each object must include properties for `name`, `address`, `zip_code`, `lat`, and `lng`.
 
 2. **Backend Development (`server.ts`):**
-    * Read the Google Maps API key via an environment variable named `GOOGLE_MAPS_API_KEY`.
+    * Generate a `.env` file at the root directory containing a placeholder: `GOOGLE_MAPS_API_KEY=your_api_key_here` and the `PORT=3000`.
+    * Ensure you use the `dotenv` package (e.g., `import 'dotenv/config';`) to read the `.env` file on startup rather than exclusively relying on OS-level environment variables.
     * Expose an endpoint `/api/config` that securely provides this API key to the frontend.
     * Expose an endpoint `/api/atms?zip_code=...` that reads `data.json`, filters the data by the provided zip code, and returns the matching ATM objects.
     * Serve the `public/` directory statically.
@@ -37,6 +38,7 @@ Build a simple, sophisticated single-page web application that allows a user to 
     * The overall UI aesthetic MUST be a beautiful, dark **Glassmorphism** theme. Utilize an ambient background gradient (e.g. `bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900`).
     * Use transparent/blur overlay panels (`backdrop-filter`) for forms and results lists. Add custom scrollbars. 
     * **Crucial Typography Fix:** Use `text-white` or `text-slate-100` for excellent contrast, but avoid super heavy weights (`font-extrabold`) or heavy text shadows (`drop-shadow-md`), as these make glowing text muddy and illegible on a dark blurred theme. Use `font-semibold` or `font-medium` instead for crisp text.
+    * **Crucial Flexbox Height Fix (MANDATORY):** When using Tailwind CSS, do NOT set generic `h-full` classes on the layout columns (like the sidebar or the map container) if their parent `.main` block uses a `h-[calc(...)]` boundary. In responsive desktop `flex-row` configurations, this causes the map wrapper height to silently collapse to `0px`. You MUST enforce hard calculated heights on both the `aside` and the map `section` elements (e.g. `h-[500px] lg:h-[calc(100vh-160px)]`) so the Google Map engine is guaranteed physical canvas space directly on render.
     * **Map Container:** Surround the map in a rounded glass container, but do NOT override the map colors dynamically. The map box itself MUST use the native, colorful default Google Maps style (no custom JSON styles array applied in the JS config).
 
 5. **Deployment:**
@@ -46,3 +48,4 @@ Build a simple, sophisticated single-page web application that allows a user to 
     * Expose port 3000.
 
 Deploy this configuration reliably. If prompted for an implementation plan, provide a Mermaid architecture diagram showing the API config fetch and data polling sequence, followed sequentially by file generation.
+
