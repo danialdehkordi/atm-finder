@@ -45,7 +45,7 @@ Build a simple, sophisticated single-page web application that allows a user to 
 5. **Deployment:**
     * Use the `node:23-slim` Docker base image.
     * The pipeline must NOT include a build step for the frontend.
-    * Configure the `Dockerfile` to install dependencies and run the application directly using `npm start` (with a start script invoking `tsx server.ts`).
+    * Configure the `Dockerfile` to install dependencies but do not run the docker build step. Run the application directly using `npm start` (with a start script invoking `tsx server.ts`).
     * Expose port 3000.
 
 Deploy this configuration reliably. If prompted for an implementation plan, provide a Mermaid architecture diagram showing the API config fetch and data polling sequence, followed sequentially by file generation.
