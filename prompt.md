@@ -18,7 +18,7 @@ Build a simple, sophisticated single-page web application that allows a user to 
 **Core Requirements:**
 
 1. **Mock Data Source Generation:**
-    * Generate a realistic `data.json` file at the project root containing an array of 5 to 8 ATM objects located in Munich, Germany (use at least fource zip codes like `80331` etc). Each object must include properties for `name`, `address`, `zip_code`, `lat`, and `lng`.
+    * Generate a realistic `data.json` file at the project root containing an array of 5 to 8 ATM objects located in Munich, Germany (use the zip code `80331`). Each object must include properties for `name`, `address`, `zip_code`, `lat`, and `lng`.
 
 2. **Backend Development (`server.ts`):**
     * Generate a `.env` file at the root directory containing a placeholder: `GOOGLE_MAPS_API_KEY=your_api_key_here` and the `PORT=3000`.
