@@ -33,6 +33,7 @@ Build a simple, sophisticated single-page web application that allows a user to 
     * When submitted, fetch data from `/api/atms` and dynamically populate the Google Map with markers.
     * Auto-adjust the map bounds/zoom so all returned markers are visible simultaneously.
     * Display the textual list of returned ATMs in a sleek sidebar. Clicking a list item should center the map on its respective marker.
+    * For accessing Google Maps APIs, check in the /home/user/repos directory for a .env file with the port and the api key. Use them!
 
 4. **Design & Aesthetics (MANDATORY STRICT GUIDELINES):**
     * The overall UI aesthetic MUST be a beautiful, dark **Glassmorphism** theme. Utilize an ambient background gradient (e.g. `bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900`).
